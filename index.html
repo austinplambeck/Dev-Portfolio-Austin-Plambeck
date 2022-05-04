@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Austin Plambeck | Portfolio</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./main.js" defer></script>
+
+    <link rel="icon" href="https://www.indiewire.com/wp-content/uploads/2018/01/blade_runner_2049-png.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Maven+Pro&family=Roboto&family=Rubik&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+    
+<body onload="welcomeMessage()">
+<!---------DESKTOP SITE--------->
+<section class="main-D">
+
+</section>
+
+<!---------MOBILE SITE--------->
+<section class="main-M">
+    <section id="welcome">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>plambo.world</h1>
+        <h2>loading<span id="loading1">.</span><span id="loading2">.</span><span id="loading3">.</span></h1>
+    </section>
+    <section id="selectors">
+        <!--HOME BUTTONS-->
+        <div class="homeButtons">
+            <button id="homeButton">HOME</button>
+            <button id="homeButtonAbout" onclick="toOtherPage(home, homeButtons, about, aboutButtons, aboutButton)">ABOUT</button>
+            <button id="homeButtonProjects">PROJECTS</button>
+            <button id="homeButtonContact">CONTACT</button>
+        </div>
+        <div class="aboutButtons">
+        <!--ABOUT BUTTONS-->
+            <button id="aboutButtonHome" onclick="toOtherPage(about, aboutButtons, home, homeButtons, homeButton)">HOME</button>
+            <button id="aboutButton">ABOUT</button>
+            <button id="aboutButtonProjects" onclick="secondpage()">PROJECTS</button>
+            <button id="aboutButtonContact" onclick="secondpage()">CONTACT</button>
+        </div>
+        <!--PROJECTS BUTTONS-->
+        <div class="projectsButtons">
+            <button id="projectsButtonHome" onclick="toggleGenre()">HOME</button>
+            <button id="projectsButtonAbout" onclick="toggleGenre()">ABOUT</button>
+            <button id="projectsButton" onclick="toggleGenre()">PROJECTS</button>
+            <button id="projectsButtonContact" onclick="toggleGenre()">CONTACT</button>
+        </div>
+        <!--CONTACT BUTTONS-->
+        <div class="contactButtons">
+            <button id="contactButtonHome" onclick="toggleAll()">HOME</button>
+            <button id="contactButtonAbout" onclick="toggleAll()">ABOUT</button>
+            <button id="contactButtonProjects" onclick="toggleAll()">PROJECTS</button>
+            <button id="contactButton" onclick="toggleAll()">CONTACT</button>
+        </div>
+    </section>
+    <section id="home">
+        <h1>Hello!</h1>
+        <h1>I'm Austin Plambeck,</h1>
+        <h1><span id="underline">Writer</span>  and</h1>
+        <h1><span id="underline">Web Developer</span></h1>
+        <img src="./images/bat (2).jpg" id="mainpic">
+        <div id="socials">
+            <a href="mailto:austinplambeck@gmail.com"><img src="./images/email2.png"></a>
+            <a href="#"><img src="./images/7763757_developer_community_github_icon.png"></a>
+            <a href="https://instagram.com/plambo.world" target="_blank"><img src="./images/ig.png"></a>
+            <a href="#"><img src="./images/twitter.png"></a>
+            <a href="#"><img src="./images/wp.png"></a>
+        </div>
+        <div id="homeToNext" onclick="toOtherPage(home, homeButtons, about, aboutButtons, aboutButton)">
+            <button>⮩</button>
+            <h2>About</h2>
+        </div>
+    </section>
+    <section id="about">
+        <h1>About Me</h1>
+        <h2>Skills</h2>
+        <h2>Education</h2>
+        <h2>Experience</h2>
+    </section>
+</section>
+</body>
+</html>
