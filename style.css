@@ -141,6 +141,7 @@
 }
 
 .toRight button {
+    font-family:'Times New Roman', Times, serif;
     font-size: 3.5rem;
     padding: 0.75vh;
     border: none;
