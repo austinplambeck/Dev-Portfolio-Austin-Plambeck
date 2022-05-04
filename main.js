@@ -37,9 +37,11 @@ let contactButton = document.getElementById('contactButton');
 
 // Loading screen welcome message
 const welcomeMessage = () => {
-    home.style.display = 'none';
     selectors.style.display = 'none';
+    home.style.display = 'none';
     about.style.display = 'none';
+    projects.style.display = 'none';
+    contact.style.display = 'none';
 
     setTimeout(function () {
             welcome.style.display = 'none';
@@ -57,27 +59,66 @@ const welcomeMessage = () => {
 
 // going from any page back to home
 const toOtherPage = (currentPage, currentButtons, nextPage, nextPageButtons, nextPageButtonSelected) => {
-    // buttons fading out
-    selectors.style.visibility = 'hidden';
-    selectors.style.opacity = '0';
-    selectors.style.transition = 'visibility 0s 1.5s, opacity 1.5s linear';
+    // current page's buttons are removed from display
+    currentButtons.style.display = 'none';
+
+    // next page's buttons are added to the display
+    nextPageButtons.style.display = 'block';
     
+    // current page removed from display
+    currentPage.style.display = 'none';
+
+    // next page button is turned to "selected" colors
+    nextPageButtonSelected.style.backgroundColor = 'black';
+    nextPageButtonSelected.style.color = 'white';
+
+    // next page is added to the display
+    nextPage.style.display = 'block';
+
+    // for going back home:
+    if (nextPage === home) {
+        document.getElementById('title1').style.animation = 'none';
+        document.getElementById('title2').style.animation = 'none';
+        document.getElementById('title3').style.animation = 'none';
+        document.getElementById('title4').style.animation = 'none';
+        document.getElementById('mainpic').style.animation = 'none';
+        document.querySelector('.socialImg1').style.animation = 'none';
+        document.querySelector('.socialImg2').style.animation = 'none';
+        document.querySelector('.socialImg3').style.animation = 'none';
+        document.querySelector('.socialImg4').style.animation = 'none';
+        document.querySelector('.socialImg5').style.animation = 'none';
+        document.querySelector('.toRight').style.animation = 'none';
+    }
+}
+
+
+
+
+
+
+// WILL USE FOR DESKTOP FADING
+//const functionName = () => {
+    // buttons fading out
+    /*selectors.style.visibility = 'hidden';
+    selectors.style.opacity = '0';
+    selectors.style.transition = 'visibility 0s 1.5s, opacity 1.5s linear';*/
+
     // current page fading out
-    currentPage.style.visibility = 'hidden';
+    /*currentPage.style.visibility = 'hidden';
     currentPage.style.opacity = '0';
-    currentPage.style.transition = 'visibility 0s 1.5s, opacity 1.5s linear';
+    currentPage.style.transition = 'visibility 0s 1.5s, opacity 1.5s linear';*/
 
     // next page visibility hidden
-    nextPage.style.visibility = 'hidden';
+    /*nextPage.style.visibility = 'hidden';*/
 
-    setTimeout(function () {
+    /* setTimeout(function () {
         // current page's buttons are removed from display
         currentButtons.style.display = 'none';
 
         // next page's buttons are added to the display
         nextPageButtons.style.display = 'block';
 
-        // buttons fading back in
+        // buttons fading back in (fade didn't load well, so I took that out)
         selectors.style.visibility = 'visible';
         selectors.style.opacity = '1';
         selectors.style.transition = 'visibility 0s 1.5s, opacity 1.5s linear';
@@ -92,12 +133,14 @@ const toOtherPage = (currentPage, currentButtons, nextPage, nextPageButtons, nex
         // next page is added to the display
         nextPage.style.display = 'block';
 
-        // next page fades in
-        nextPage.style.visibility = 'visible';
+        // next page fades in (fade doesn't load well on mobile)
+        /*nextPage.style.visibility = 'visible';
         nextPage.style.opacity = '1';
         nextPage.style.transition = 'visibility 0s 1.5s, opacity 1.5s linear';
-    }, 1500);
-}
+    }, 1500); */
+//}
+   
+
 
 
 

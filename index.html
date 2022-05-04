@@ -43,46 +43,46 @@
         <div class="homeButtons">
             <button id="homeButton">HOME</button>
             <button id="homeButtonAbout" onclick="toOtherPage(home, homeButtons, about, aboutButtons, aboutButton)">ABOUT</button>
-            <button id="homeButtonProjects">PROJECTS</button>
-            <button id="homeButtonContact">CONTACT</button>
+            <button id="homeButtonProjects" onclick="toOtherPage(home, homeButtons, projects, projectsButtons, projectsButton)">PROJECTS</button>
+            <button id="homeButtonContact" onclick="toOtherPage(home, homeButtons, contact, contactButtons, contactButton)">CONTACT</button>
         </div>
         <div class="aboutButtons">
         <!--ABOUT BUTTONS-->
             <button id="aboutButtonHome" onclick="toOtherPage(about, aboutButtons, home, homeButtons, homeButton)">HOME</button>
             <button id="aboutButton">ABOUT</button>
-            <button id="aboutButtonProjects" onclick="secondpage()">PROJECTS</button>
-            <button id="aboutButtonContact" onclick="secondpage()">CONTACT</button>
+            <button id="aboutButtonProjects" onclick="toOtherPage(about, aboutButtons, projects, projectsButtons, projectsButton)">PROJECTS</button>
+            <button id="aboutButtonContact" onclick="toOtherPage(about, aboutButtons, contact, contactButtons, contactButton)">CONTACT</button>
         </div>
         <!--PROJECTS BUTTONS-->
         <div class="projectsButtons">
-            <button id="projectsButtonHome" onclick="toggleGenre()">HOME</button>
-            <button id="projectsButtonAbout" onclick="toggleGenre()">ABOUT</button>
-            <button id="projectsButton" onclick="toggleGenre()">PROJECTS</button>
-            <button id="projectsButtonContact" onclick="toggleGenre()">CONTACT</button>
+            <button id="projectsButtonHome" onclick="toOtherPage(projects, projectsButtons, home, homeButtons, homeButton)">HOME</button>
+            <button id="projectsButtonAbout" onclick="toOtherPage(projects, projectsButtons, about, aboutButtons, aboutButton)">ABOUT</button>
+            <button id="projectsButton">PROJECTS</button>
+            <button id="projectsButtonContact" onclick="toOtherPage(projects, projectsButtons, contact, contactButtons, contactButton)">CONTACT</button>
         </div>
         <!--CONTACT BUTTONS-->
         <div class="contactButtons">
-            <button id="contactButtonHome" onclick="toggleAll()">HOME</button>
-            <button id="contactButtonAbout" onclick="toggleAll()">ABOUT</button>
-            <button id="contactButtonProjects" onclick="toggleAll()">PROJECTS</button>
-            <button id="contactButton" onclick="toggleAll()">CONTACT</button>
+            <button id="contactButtonHome" onclick="toOtherPage(contact, contactButtons, home, homeButtons, homeButton)">HOME</button>
+            <button id="contactButtonAbout" onclick="toOtherPage(contact, contactButtons, about, aboutButtons, aboutButton)">ABOUT</button>
+            <button id="contactButtonProjects" onclick="toOtherPage(contact, contactButtons, projects, projectsButtons, projectsButton)">PROJECTS</button>
+            <button id="contactButton">CONTACT</button>
         </div>
     </section>
     <section id="home">
-        <h1>Hello!</h1>
-        <h1>I'm Austin Plambeck,</h1>
-        <h1><span id="underline">Writer</span>  and</h1>
-        <h1><span id="underline">Web Developer</span></h1>
+        <h1 id="title1">Hello!</h1>
+        <h1 id="title2">I'm Austin Plambeck,</h1>
+        <h1 id="title3"><span id="underline">Writer</span>  and</h1>
+        <h1 id="title4"><span id="underline">Web Developer</span></h1>
         <img src="./images/bat (2).jpg" id="mainpic">
         <div id="socials">
-            <a href="mailto:austinplambeck@gmail.com"><img src="./images/email2.png"></a>
-            <a href="#"><img src="./images/7763757_developer_community_github_icon.png"></a>
-            <a href="https://instagram.com/plambo.world" target="_blank"><img src="./images/ig.png"></a>
-            <a href="#"><img src="./images/twitter.png"></a>
-            <a href="#"><img src="./images/wp.png"></a>
+            <a href="mailto:austinplambeck@gmail.com"><img src="./images/email2.png" class="socialImg1"></a>
+            <a href="#"><img src="./images/7763757_developer_community_github_icon.png" class="socialImg2"></a>
+            <a href="https://instagram.com/plambo.world" target="_blank"><img src="./images/ig.png" class="socialImg3"></a>
+            <a href="#"><img src="./images/twitter.png" class="socialImg4"></a>
+            <a href="#"><img src="./images/wp.png" class="socialImg5"></a>
         </div>
-        <div id="homeToNext" onclick="toOtherPage(home, homeButtons, about, aboutButtons, aboutButton)">
-            <button>⮩</button>
+        <div class="toRight" onclick="toOtherPage(home, homeButtons, about, aboutButtons, aboutButton)">
+            <button>&#11177;</button>
             <h2>About</h2>
         </div>
     </section>
@@ -91,6 +91,33 @@
         <h2>Skills</h2>
         <h2>Education</h2>
         <h2>Experience</h2>
+        <div class="toLeft" onclick="toOtherPage(about, aboutButtons, home, homeButtons, homeButton)">
+            <button>&#11176;</button>
+            <h2>Home</h2>
+        </div>
+        <div class="toRight2" onclick="toOtherPage(about, aboutButtons, projects, projectsButtons, projectsButton)">
+            <button>&#11177;</button>
+            <h2>Projects</h2>
+        </div>
+    </section>
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="toLeft" onclick="toOtherPage(projects, projectsButtons, about, aboutButtons, aboutButton)">
+            <button>&#11176;</button>
+            <h2>About</h2>
+        </div>
+        <div class="toRight2" onclick="toOtherPage(projects, projectsButtons, contact, contactButtons, contactButton)">
+            <button>&#11177;</button>
+            <h2>Contact</h2>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <h2>Freelance Work Available</h2>
+        <div class="toLeft" onclick="toOtherPage(contact, contactButtons, projects, projectsButtons, projectsButton)">
+            <button>&#11176;</button>
+            <h2>Projects</h2>
+        </div>
     </section>
 </section>
 </body>

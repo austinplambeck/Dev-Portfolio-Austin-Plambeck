@@ -14,7 +14,7 @@
 #welcome h1 {
     font-family: 'Space Mono', monospace;
     font-weight: 400;
-    animation: fade 3s linear; 
+    animation: fade 3.5s linear; 
     font-size: 3rem;
     margin-bottom: 1vh;
     text-align: center;
@@ -28,7 +28,7 @@
 #welcome h2 {
     font-family: 'Space Mono', monospace;
     font-weight: 400;
-    animation: fade 3s linear; 
+    animation: fade 3.5s linear; 
     font-size: 2.4rem;
     margin-bottom: 1vh;
     text-align: center;
@@ -132,7 +132,7 @@
     margin: 0 1.5vh 0 1.5vh;
 }
 
-#homeToNext {
+.toRight {
     animation: fadeIn 6s;
     position: fixed;
     text-align: right;
@@ -140,16 +140,53 @@
     right: 2vh;
 }
 
-#homeToNext button {
+.toRight button {
     font-size: 3.5rem;
     padding: 0.75vh;
     border: none;
 }
 
-#homeToNext h2 {
+.toRight h2 {
     font-size: 1.4rem;
     margin-top: -2vh;
 }
+
+.toRight2 {
+    position: fixed;
+    text-align: right;
+    bottom: 2vh;
+    right: 2vh;
+}
+
+.toRight2 button {
+    font-size: 3.5rem;
+    padding: 0.75vh;
+    border: none;
+}
+
+.toRight2 h2 {
+    font-size: 1.4rem;
+    margin-top: -2vh;
+}
+
+.toLeft {
+    position: fixed;
+    text-align: left;
+    bottom: 2vh;
+    left: 2vh;
+}
+
+.toLeft button {
+    font-size: 3.5rem;
+    padding: 0.75vh;
+    border: none;
+}
+
+.toLeft h2 {
+    font-size: 1.4rem;
+    margin-top: -2vh;
+}
+
 
 
 
