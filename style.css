@@ -141,7 +141,7 @@
 }
 
 .toRight button {
-    font-family:'Times New Roman', Times, serif;
+    font-family: monospace;
     font-size: 3.5rem;
     padding: 0.75vh 0 0.75vh 0.75vh;
     border: none;
@@ -160,7 +160,7 @@
 }
 
 .toRight2 button {
-    font-family:'Times New Roman', Times, serif;
+    font-family: monospace;
     font-size: 3.5rem;
     padding: 0.75vh 0 0.75vh 0.75vh;
     border: none;
@@ -179,7 +179,7 @@
 }
 
 .toLeft button {
-    font-family:'Times New Roman', Times, serif;
+    font-family: monospace;
     font-size: 3.5rem;
     padding: 0.75vh 0.75vh 0.75vh 0;
     border: none;
