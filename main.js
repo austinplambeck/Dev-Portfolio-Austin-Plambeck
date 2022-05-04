@@ -67,6 +67,9 @@ const toOtherPage = (currentPage, currentButtons, nextPage, nextPageButtons, nex
     currentPage.style.opacity = '0';
     currentPage.style.transition = 'visibility 0s 1.5s, opacity 1.5s linear';
 
+    // next page visibility hidden
+    nextPage.style.visibility = 'hidden';
+
     setTimeout(function () {
         // current page's buttons are removed from display
         currentButtons.style.display = 'none';
