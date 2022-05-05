@@ -71,15 +71,16 @@
     <section id="home">
         <h1 id="title1">Hello!</h1>
         <h1 id="title2">I'm Austin Plambeck,</h1>
-        <h1 id="title3"><span id="italicbold">Writer</span>  and</h1>
+        <h1 id="title3"><span id="italicbold">Writer</span> and</h1>
         <h1 id="title4"><span id="italicbold">Web Developer</span></h1>
         <img src="./images/bat (2).jpg" id="mainpic">
         <div id="socials">
+            <a href="https://github.com/austinplambeck" target="_blank"><img src="./images/7763757_developer_community_github_icon.png" class="socialImg2"></a>
+            <a href="https://www.linkedin.com/in/austinplambeck/" target="_blank"><img src="./images/linkedin.png" class="socialImg6"></a>
             <a href="mailto:austinplambeck@gmail.com"><img src="./images/email2.png" class="socialImg1"></a>
-            <a href="#"><img src="./images/7763757_developer_community_github_icon.png" class="socialImg2"></a>
             <a href="https://instagram.com/plambo.world" target="_blank"><img src="./images/ig.png" class="socialImg3"></a>
-            <a href="#"><img src="./images/twitter.png" class="socialImg4"></a>
-            <a href="#"><img src="./images/wp.png" class="socialImg5"></a>
+            <a href="https://twitter.com/talesofstorms" target="_blank"><img src="./images/twitter.png" class="socialImg4"></a>
+            <a href="https://talesofstorms.com/" target="_top"><img src="./images/wp.png" class="socialImg5"></a>
         </div>
         <div class="toRight" onclick="toOtherPage(home, homeButtons, about, aboutButtons, aboutButton)">
             <button>&#8594;</button>
@@ -88,9 +89,19 @@
     </section>
     <section id="about">
         <h1>About Me</h1>
+        <p>I'm a web developer, writer (soon-to-be author), and connoisseur of sad villains & byronic heroes.</p>
         <h2>Skills</h2>
-        <h2>Education</h2>
+        <ul id="skillsList">
+            <li>Experienced in HTML5, CSS3, and JavaScript</li>
+            <li>Learning the full stack (React, Node.js, SQL)</li>
+        </ul>
         <h2>Experience</h2>
+        <ul id="expList">
+            <li id="expTitle">Freelance Web Developer (March 2022 - )</li>
+            <li id="indentedLI">Designed and built websites in accordance with clients' needs and expectations, 
+                using my own code and through WordPress</li>
+        </ul>
+        <h2>Education</h2>
         <div class="toLeft" onclick="toOtherPage(about, aboutButtons, home, homeButtons, homeButton)">
             <button>&#8592;</button>
             <h2>Home</h2>

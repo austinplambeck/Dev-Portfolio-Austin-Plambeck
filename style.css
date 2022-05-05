@@ -129,7 +129,7 @@
 }
 
 #socials img {
-    width: 5.5vh;
+    width: 5vh;
     animation: fadeIn 5.5s;
     margin: 0 1.5vh 0 1.5vh;
 }
@@ -192,11 +192,44 @@
     margin-top: -2vh;
 }
 
-
-
-
-#page2 h1 {
-    font-size: 2.7rem;
-    margin-bottom: 1vh;
+/* ----------------------- ABOUT PAGE ---------------------- */
+#about h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.75vh;
 }
 
+#about p {
+    font-size: 1.1rem;
+    margin-bottom: 1.25vh;
+}
+
+#about h2 {
+    font-size: 1.35rem;
+    margin-bottom: 0.75vh;
+}
+
+#skillsList {
+    margin-left: 3vh;
+    margin-bottom: 1.25vh;
+}
+
+#skillsList li {
+    font-size: 1.1rem;
+    margin-bottom: 0.25vh;
+}
+
+#expList {
+    margin-left: 3vh;
+    margin-bottom: 1.25vh;
+}
+
+#expTitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.25vh;
+}
+
+#indentedLI {
+    margin-left: 4vh;
+    list-style-type: square;
+    font-size: 0.95rem;
+}

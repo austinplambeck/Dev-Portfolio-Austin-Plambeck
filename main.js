@@ -87,6 +87,7 @@ const toOtherPage = (currentPage, currentButtons, nextPage, nextPageButtons, nex
         document.querySelector('.socialImg3').style.animation = 'none';
         document.querySelector('.socialImg4').style.animation = 'none';
         document.querySelector('.socialImg5').style.animation = 'none';
+        document.querySelector('.socialImg6').style.animation = 'none';
         document.querySelector('.toRight').style.animation = 'none';
     }
 }
