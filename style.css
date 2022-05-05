@@ -199,13 +199,14 @@
 }
 
 #about p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     margin-bottom: 1.25vh;
 }
 
-#about h2 {
-    font-size: 1.35rem;
-    margin-bottom: 0.75vh;
+#about h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5vh;
+    margin-top: 1.6vh;
 }
 
 #skillsList {
@@ -214,7 +215,7 @@
 }
 
 #skillsList li {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     margin-bottom: 0.25vh;
 }
 
@@ -224,12 +225,47 @@
 }
 
 #expTitle {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
     margin-bottom: 0.25vh;
+    margin-top: 1vh;
 }
 
 #indentedLI {
     margin-left: 4vh;
     list-style-type: square;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
+    margin-bottom: 0.25vh;
+}
+
+#eduList {
+    margin-left: 3vh;
+    margin-bottom: 1.25vh;
+}
+
+#eduTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.25vh;
+    margin-top: 0.7vh;
+}
+
+#eduIndentedLI {
+    margin-left: 4vh;
+    list-style-type: square;
+    font-size: 1.05rem;
+    margin-bottom: 0.25vh;
+}
+
+/* ----------------------- PROJECTS PAGE ---------------------- */
+#projects h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.75vh;
+}
+
+#projects h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5vh;
+    margin-top: 1.6vh;
 }
