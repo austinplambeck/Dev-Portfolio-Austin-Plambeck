@@ -34,6 +34,17 @@ let contactButtonAbout = document.getElementById('contactButtonAbout');
 let contactButtonProjects = document.getElementById('contactButtonProjects');
 let contactButton = document.getElementById('contactButton');
 
+// ABOUT -- Experience section titles
+let expTitleOne = document.getElementById('expTitle1');
+let expTitleTwo = document.getElementById('expTitle2');
+let expTitleThree = document.getElementById('expTitle3');
+
+// ABOUT -- Experience section list items/descriptions
+let indentedLIOne = document.getElementById('indentedLI1');
+let indentedLITwo = document.getElementById('indentedLI2');
+let indentedLIThree = document.getElementById('indentedLI3');
+let indentedLIFour = document.getElementById('indentedLI4');
+
 
 // Loading screen welcome message
 const welcomeMessage = () => {
@@ -42,6 +53,10 @@ const welcomeMessage = () => {
     about.style.display = 'none';
     projects.style.display = 'none';
     contact.style.display = 'none';
+    indentedLIOne.style.display = 'none';
+    indentedLITwo.style.display = 'none';
+    indentedLIThree.style.display = 'none';
+    indentedLIFour.style.display = 'none';
 
     setTimeout(function () {
             welcome.style.display = 'none';

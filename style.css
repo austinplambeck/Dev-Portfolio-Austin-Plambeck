@@ -227,19 +227,27 @@
     margin-bottom: 1.25vh;
 }
 
-#expTitle {
+#expTitle1, #expTitle2, #expTitle3 {
     font-size: 1.2rem;
     font-weight: bold;
-    font-style: italic;
     margin-bottom: 0.25vh;
     margin-top: 1vh;
 }
 
-#indentedLI {
+#indentedLI1, #indentedLI2, #indentedLI4 {
     margin-left: 4vh;
     list-style-type: square;
     font-size: 1.05rem;
     margin-bottom: 0.25vh;
+    margin-top: 0.6vh;
+}
+
+#indentedLI3 {
+    margin-left: 4vh;
+    list-style-type: square;
+    font-size: 1.05rem;
+    margin-bottom: 0.25vh;
+    margin-top: 0.3vh;
 }
 
 #eduList {
