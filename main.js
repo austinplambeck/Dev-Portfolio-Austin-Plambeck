@@ -34,11 +34,6 @@ let contactButtonAbout = document.getElementById('contactButtonAbout');
 let contactButtonProjects = document.getElementById('contactButtonProjects');
 let contactButton = document.getElementById('contactButton');
 
-// ABOUT -- Experience section titles
-let expTitleOne = document.getElementById('expTitle1');
-let expTitleTwo = document.getElementById('expTitle2');
-let expTitleThree = document.getElementById('expTitle3');
-
 // ABOUT -- Experience section list items/descriptions
 let indentedLIOne = document.getElementById('indentedLI1');
 let indentedLITwo = document.getElementById('indentedLI2');

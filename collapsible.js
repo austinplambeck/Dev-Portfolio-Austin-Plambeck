@@ -12,10 +12,10 @@ let indentedLI4 = document.getElementById('indentedLI4');
 const collapse1 = () => {
     if (indentedLI1.style.display === 'none') {
         indentedLI1.style.display = 'list-item';
-        expTitle1.innerHTML = 'Freelance Web Developer (Mar. 2022 - ) &#11205;';
+        expTitle1.innerHTML = 'Freelance Web Developer (Mar. 2022 - ) &#9650;';
     } else {
         indentedLI1.style.display = 'none';
-        expTitle1.innerHTML = 'Freelance Web Developer (Mar. 2022 - ) &#11206;'
+        expTitle1.innerHTML = 'Freelance Web Developer (Mar. 2022 - ) &#9660;'
     }
 }
 
@@ -23,20 +23,20 @@ const collapse2 = () => {
     if (indentedLI2.style.display === 'none' && indentedLI3.style.display === 'none') {
         indentedLI2.style.display = 'list-item';
         indentedLI3.style.display = 'list-item';
-        expTitle2.innerHTML = 'Author (Oct. 2018 - ) &#11205;';
+        expTitle2.innerHTML = 'Author (Oct. 2018 - ) &#9650;';
     } else {
         indentedLI2.style.display = 'none';
         indentedLI3.style.display = 'none';
-        expTitle2.innerHTML = 'Author (Oct. 2018 - ) &#11206;'
+        expTitle2.innerHTML = 'Author (Oct. 2018 - ) &#9660;'
     }
 }
 
 const collapse3 = () => {
     if (indentedLI4.style.display === 'none') {
         indentedLI4.style.display = 'list-item';
-        expTitle3.innerHTML = 'Tutor (Feb. 2020 - Nov. 2021) &#11205;';
+        expTitle3.innerHTML = 'Tutor (Feb. 2020 - Nov. 2021) &#9650;';
     } else {
         indentedLI4.style.display = 'none';
-        expTitle3.innerHTML = 'Tutor (Feb. 2020 - Nov. 2021) &#11206;'
+        expTitle3.innerHTML = 'Tutor (Feb. 2020 - Nov. 2021) &#9660;'
     }
 }
