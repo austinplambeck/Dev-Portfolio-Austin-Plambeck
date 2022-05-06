@@ -64,7 +64,7 @@
 }
 
 #selectors button{
-    margin: 0 1vh 0 1vh;
+    margin: 0 0.5vh 0 0.5vh;
     font-size: 1.1rem;
     border: 0.3vh solid #E9F7F9;
     background-color: #E7E5FF;
@@ -76,7 +76,7 @@
 
 #home h1 {
     animation: slideIn 2s;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     font-weight: 400;
 }
 
@@ -85,7 +85,7 @@
 }
 
 #italicbold {
-    font-size: 2.8rem;
+    font-size: 2.55rem;
     font-style: italic;
     font-weight: bold;
     margin-bottom: 1vh;
