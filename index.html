@@ -7,6 +7,7 @@
 
     <script src="./main.js" defer></script>
     <script src="./collapsible.js" defer></script>
+    <script src="./arrowcolor.js" defer></script>
 
     <link rel="icon" href="https://www.indiewire.com/wp-content/uploads/2018/01/blade_runner_2049-png.jpeg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,8 +85,8 @@
             <a href="https://talesofstorms.com/" target="_blank"><img src="./images/wp.png" class="socialImg5"></a>
         </div>
         <div class="toRight" onclick="toOtherPage(home, homeButtons, about, aboutButtons, aboutButton)">
-            <button>&#8594;</button>
-            <h2>About</h2>
+            <button id="rightArrow1">&#8594;</button>
+            <h2 id="rightArrow1Title">About</h2>
         </div>
     </section>
     <section id="about">
@@ -116,12 +117,12 @@
             <li id="eduIndentedLI">3.5 GPA, Dean's List</li>
         </ul>
         <div class="toLeft" onclick="toOtherPage(about, aboutButtons, home, homeButtons, homeButton)">
-            <button>&#8592;</button>
-            <h2>Home</h2>
+            <button id="leftArrow">&#8592;</button>
+            <h2 id="leftArrowTitle">Home</h2>
         </div>
         <div class="toRight2" onclick="toOtherPage(about, aboutButtons, projects, projectsButtons, projectsButton)">
-            <button>&#8594;</button>
-            <h2>Projects</h2>
+            <button id="rightArrow2">&#8594;</button>
+            <h2 id="rightArrow2Title">Projects</h2>
         </div>
     </section>
     <section id="projects">
@@ -147,13 +148,13 @@
             <li id="freelanceLI">WordPress websites & blogs <span>(for authors and content creators)</span></li>
             <li id="freelanceLI">Online "cards"/resumes</li>
         </ul>
-        <div class="toLeft" onclick="toOtherPage(projects, projectsButtons, about, aboutButtons, aboutButton)">
-            <button>&#8592;</button>
-            <h2>About</h2>
+        <div class="toLeft2" onclick="toOtherPage(projects, projectsButtons, about, aboutButtons, aboutButton)">
+            <button id="leftArrowTwo">&#8592;</button>
+            <h2 id="leftArrowTitleTwo">About</h2>
         </div>
-        <div class="toRight2" onclick="toOtherPage(projects, projectsButtons, contact, contactButtons, contactButton)">
-            <button>&#8594;</button>
-            <h2>Contact</h2>
+        <div class="toRight3" onclick="toOtherPage(projects, projectsButtons, contact, contactButtons, contactButton)">
+            <button id="rightArrow2Two">&#8594;</button>
+            <h2 id="rightArrow2TitleTwo">Contact</h2>
         </div>
     </section>
     <section id="contact">
@@ -172,9 +173,9 @@
                 films and our doomed planet
             </li>
         </ul>
-        <div class="toLeft" onclick="toOtherPage(contact, contactButtons, projects, projectsButtons, projectsButton)">
-            <button>&#8592;</button>
-            <h2>Projects</h2>
+        <div class="toLeft3" onclick="toOtherPage(contact, contactButtons, projects, projectsButtons, projectsButton)">
+            <button id="leftArrowThree">&#8592;</button>
+            <h2 id="leftArrowTitleThree">Projects</h2>
         </div>
     </section>
 </section>

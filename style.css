@@ -139,6 +139,7 @@
     text-align: right;
     bottom: 2vh;
     right: 2vh;
+    cursor: pointer;
 }
 
 .toRight button {
@@ -146,49 +147,57 @@
     font-size: 3.5rem;
     padding: 0.75vh 0 0.75vh 0.75vh;
     border: none;
+    cursor: pointer;
 }
 
 .toRight h2 {
     font-size: 1.4rem;
     margin-top: -2vh;
+    cursor: pointer;
 }
 
-.toRight2 {
+.toRight2, .toRight3 {
     position: fixed;
     text-align: right;
     bottom: 2vh;
     right: 2vh;
+    cursor: pointer;
 }
 
-.toRight2 button {
+.toRight2 button, .toRight3 button {
     font-family: monospace;
     font-size: 3.5rem;
     padding: 0.75vh 0 0.75vh 0.75vh;
     border: none;
+    cursor: pointer;
 }
 
-.toRight2 h2 {
+.toRight2 h2, .toRight3 h2 {
     font-size: 1.4rem;
     margin-top: -2vh;
+    cursor: pointer;
 }
 
-.toLeft {
+.toLeft, .toLeft2, .toLeft3 {
     position: fixed;
     text-align: left;
     bottom: 2vh;
     left: 2vh;
+    cursor: pointer;
 }
 
-.toLeft button {
+.toLeft button, .toLeft2 button, .toLeft3 button {
     font-family: monospace;
     font-size: 3.5rem;
     padding: 0.75vh 0.75vh 0.75vh 0;
     border: none;
+    cursor: pointer;
 }
 
-.toLeft h2 {
+.toLeft h2, .toLeft2 h2, .toLeft3 h2 {
     font-size: 1.4rem;
     margin-top: -2vh;
+    cursor: pointer;
 }
 
 /* ----------------------- ABOUT PAGE ---------------------- */
@@ -232,6 +241,10 @@
     font-weight: bold;
     margin-bottom: 0.25vh;
     margin-top: 1vh;
+}
+
+#expTitle1:hover, #expTitle2:hover, #expTitle3:hover {
+    color: yellow;
 }
 
 #indentedLI1, #indentedLI2, #indentedLI4 {

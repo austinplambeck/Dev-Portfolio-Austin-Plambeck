@@ -64,10 +64,10 @@ const welcomeMessage = () => {
 
             homeButton.style.backgroundColor = 'black';
             homeButton.style.color = 'white';
-        }, 3000);
+    }, 3000);
 }
 
-// going from any page back to home
+// going to any other page
 const toOtherPage = (currentPage, currentButtons, nextPage, nextPageButtons, nextPageButtonSelected) => {
     // current page's buttons are removed from display
     currentButtons.style.display = 'none';
@@ -101,6 +101,8 @@ const toOtherPage = (currentPage, currentButtons, nextPage, nextPageButtons, nex
         document.querySelector('.toRight').style.animation = 'none';
     }
 }
+
+
 
 
 
