@@ -8,7 +8,8 @@
 }
 
 .main-M {
-    margin: 2vh 2vh 2vh 2vh;
+    margin: 2vh auto;
+    max-width: 450px;
 }
 
 #welcome h1 {
@@ -16,6 +17,7 @@
     font-weight: 400;
     animation: fade 3.5s linear; 
     font-size: 3rem;
+    margin-top: 30vh;
     margin-bottom: 1vh;
     text-align: center;
 }
@@ -72,6 +74,10 @@
     border-radius: 3px;
     cursor: pointer;
     padding: 0.5vh;
+}
+
+#home, #about, #projects, #contact {
+    margin: 0vh 2vh;
 }
 
 #home h1 {
@@ -131,6 +137,7 @@
     width: 5vh;
     animation: fadeIn 5.5s;
     margin: 0 1.5vh 0 1.5vh;
+    max-width: 40px;
 }
 
 .toRight {
@@ -241,9 +248,10 @@
     font-weight: bold;
     margin-bottom: 0.25vh;
     margin-top: 1vh;
+    cursor: pointer;
 }
 
-#expTitle1:active, #expTitle2:active, #expTitle3:active {
+#yellowArrow {
     color: yellow;
 }
 

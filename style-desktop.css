@@ -1,0 +1,381 @@
+/* 
+
+
+MOST LIKELY WILL NOT BE USING THIS CSS, 
+AS I DO NOT WANT TO RENAME EVERY CLASS, ID, ETC... 
+
+
+*/ 
+
+@media only screen and (min-width: 900px) {
+    * {
+        background-color: #181E34;
+        color: #E7E5FF;
+        font-family: 'Rubik', sans-serif;
+        font-size: 12pt;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main-M {
+        display: none;
+    }
+    
+    .main-D {
+        margin: 2vh 30vh 2vh 30vh;
+    }
+
+    #welcome h1 {
+        font-family: 'Space Mono', monospace;
+        font-weight: 400;
+        animation: fade 3.5s linear; 
+        font-size: 3rem;
+        margin-top: 30vh;
+        margin-bottom: 1vh;
+        text-align: center;
+    }
+    
+    @keyframes fade {
+        0%, 100% { opacity: 0 }
+        50% { opacity: 1 }
+    }
+    
+    #welcome h2 {
+        font-family: 'Space Mono', monospace;
+        font-weight: 400;
+        animation: fade 3.5s linear; 
+        font-size: 2.4rem;
+        margin-bottom: 1vh;
+        text-align: center;
+    }
+    
+    #loading1 {
+        animation: fadeIn 1s;
+        font-family: 'Space Mono', monospace;
+        font-weight: 400;
+        font-size: 2.4rem;
+    }
+    
+    #loading2 {
+        animation: fadeIn 2.25s;
+        font-family: 'Space Mono', monospace;
+        font-weight: 400;
+        font-size: 2.4rem;
+    }
+    
+    #loading3 {
+        animation: fadeIn 3.5s;
+        font-family: 'Space Mono', monospace;
+        font-weight: 400;
+        font-size: 2.4rem;
+    }
+    
+    #selectors {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 3.5vh;
+        animation: fadeIn 2s;
+    }
+    
+    #selectors button{
+        margin: 0 0.5vh 0 0.5vh;
+        font-size: 1.1rem;
+        border: 0.3vh solid #E9F7F9;
+        background-color: #E7E5FF;
+        color: black;
+        border-radius: 3px;
+        cursor: pointer;
+        padding: 0.5vh;
+    }
+    
+    #home h1 {
+        animation: slideIn 2s;
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    
+    #title3 {
+        word-spacing: 0.35rem;
+    }
+    
+    #italicbold {
+        font-size: 2.55rem;
+        font-style: italic;
+        font-weight: bold;
+        margin-bottom: 1vh;
+    }
+    
+    @keyframes slideIn {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+    
+        75% {
+            margin-left: 25%;
+            width: 150%;
+        }
+    
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+    
+    #mainpic {
+        animation: fadeIn 4s;
+        margin: 3vh auto 3vh auto;
+        border-radius: 50%;
+        display: block;
+        width: 30%;
+    }
+    
+    @keyframes fadeIn {
+        0% { opacity: 0 }
+        25% { opacity: 0 }
+        100% { opacity: 1 }
+    }
+    
+    #socials {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #socials img {
+        width: 5vh;
+        animation: fadeIn 5.5s;
+        margin: 0 1.5vh 0 1.5vh;
+    }
+    
+    .toRight {
+        animation: fadeIn 6s;
+        position: fixed;
+        text-align: right;
+        bottom: 2vh;
+        right: 2vh;
+        cursor: pointer;
+    }
+    
+    .toRight button {
+        font-family: monospace;
+        font-size: 3.5rem;
+        padding: 0.75vh 0 0.75vh 0.75vh;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .toRight h2 {
+        font-size: 1.4rem;
+        margin-top: -2vh;
+        cursor: pointer;
+    }
+    
+    .toRight2, .toRight3 {
+        position: fixed;
+        text-align: right;
+        bottom: 2vh;
+        right: 2vh;
+        cursor: pointer;
+    }
+    
+    .toRight2 button, .toRight3 button {
+        font-family: monospace;
+        font-size: 3.5rem;
+        padding: 0.75vh 0 0.75vh 0.75vh;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .toRight2 h2, .toRight3 h2 {
+        font-size: 1.4rem;
+        margin-top: -2vh;
+        cursor: pointer;
+    }
+    
+    .toLeft, .toLeft2, .toLeft3 {
+        position: fixed;
+        text-align: left;
+        bottom: 2vh;
+        left: 2vh;
+        cursor: pointer;
+    }
+    
+    .toLeft button, .toLeft2 button, .toLeft3 button {
+        font-family: monospace;
+        font-size: 3.5rem;
+        padding: 0.75vh 0.75vh 0.75vh 0;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .toLeft h2, .toLeft2 h2, .toLeft3 h2 {
+        font-size: 1.4rem;
+        margin-top: -2vh;
+        cursor: pointer;
+    }
+    
+    /* ----------------------- ABOUT PAGE ---------------------- */
+    #about h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.75vh;
+    }
+    
+    #emoji {
+        font-size: 2.2rem;
+    }
+    
+    #about p {
+        font-size: 1.15rem;
+        margin-bottom: 1.25vh;
+    }
+    
+    #about h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5vh;
+        margin-top: 2vh;
+    }
+    
+    #skillsList {
+        margin-left: 3vh;
+        margin-bottom: 1.25vh;
+    }
+    
+    #skillsList li {
+        font-size: 1.15rem;
+        margin-bottom: 0.25vh;
+    }
+    
+    #expList {
+        margin-left: 3vh;
+        margin-bottom: 1.25vh;
+    }
+    
+    #expTitle1, #expTitle2, #expTitle3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.25vh;
+        margin-top: 1vh;
+    }
+    
+    #yellowArrow {
+        color: yellow;
+    }
+    
+    #indentedLI1, #indentedLI2, #indentedLI4 {
+        margin-left: 4vh;
+        list-style-type: square;
+        font-size: 1.05rem;
+        margin-bottom: 0.25vh;
+        margin-top: 0.6vh;
+    }
+    
+    #indentedLI3 {
+        margin-left: 4vh;
+        list-style-type: square;
+        font-size: 1.05rem;
+        margin-bottom: 0.25vh;
+        margin-top: 0.3vh;
+    }
+    
+    #eduList {
+        margin-left: 3vh;
+        margin-bottom: 1.25vh;
+    }
+    
+    #eduTitle {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.25vh;
+        margin-top: 0.7vh;
+    }
+    
+    #eduIndentedLI {
+        margin-left: 4vh;
+        list-style-type: square;
+        font-size: 1.05rem;
+        margin-bottom: 0.25vh;
+    }
+    
+    /* ----------------------- PROJECTS PAGE ---------------------- */
+    #projects h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.75vh;
+    }
+    
+    #projects h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5vh;
+        margin-top: 2vh;
+    }
+    
+    #projects ul {
+        margin-left: 3vh;
+        margin-bottom: 1.25vh;
+    }
+    
+    #projects li {
+        font-size: 1.15rem;
+        margin-bottom: 0.25vh;
+    }
+    
+    #projects li a {
+        font-size: 1.15rem;
+    }
+    
+    #projIndentedLI {
+        margin-left: 4vh;
+        list-style-type: square;
+        font-size: 1.05rem;
+        margin-bottom: 0.25vh;
+    }
+    
+    #freelanceLI {
+        font-weight: bold;
+        margin-bottom: 0.5vh;
+    }
+    
+    #freelanceLI span {
+        font-weight: normal;
+        font-size: 1.15rem;
+    }
+    
+    /* ----------------------- CONTACT PAGE ---------------------- */
+    #contact h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.75vh;
+    }
+    
+    #contactPic {
+        margin: 1.5vh auto 2vh auto;
+        border-radius: 50%;
+        display: block;
+        width: 55%;
+    }
+    
+    #contact h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1vh;
+        margin-top: 2.75vh;
+        line-height: 1.85rem;
+    }
+    
+    #contact h3 a {
+        font-size: 1.5rem;
+    }
+    
+    #contact ul {
+        margin-left: 3vh;
+        margin-bottom: 1.25vh;
+    }
+    
+    #contact li {
+        font-size: 1.3rem;
+        margin-bottom: 1vh;
+    }
+    
+    #contact li a {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+}
