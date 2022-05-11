@@ -378,6 +378,10 @@
         font-size: 11pt;
     }
 
+    #selectors {
+        margin-top: 3vh;
+    }
+
     #selectors button {
         margin: 0vh 1.25vh;
         font-size: 1.2rem;
