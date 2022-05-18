@@ -296,6 +296,10 @@
     margin-bottom: 0.75vh;
 }
 
+#projectsLink {
+    font-size: 1.6rem;
+}
+
 #projects h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5vh;
